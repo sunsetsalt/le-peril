@@ -211,28 +211,28 @@ const Home = () => {
                   className="grid grid-cols-3 gap-4 text-sm text-gray-500 pt-4 max-w-2xl"
                 >
                   <div className="flex items-center space-x-2 justify-start">
-                    <Droplets className="w-4 h-4 text-red-500 animate-pulse" />
-                    <span>{t('tropes.dystopian')}</span>
+                    <Droplets className="w-6 h-6 text-red-500 animate-pulse" />
+                    <span className="text-gray-300 text-base">{t('tropes.dystopian')}</span>
                   </div>
                   <div className="flex items-center space-x-2 justify-start">
-                    <Leaf className="w-4 h-4 text-orange-500 animate-pulse" style={{ animationDelay: '0.5s' }} />
-                    <span>{t('tropes.foundFamily')}</span>
+                    <Leaf className="w-6 h-6 text-orange-500 animate-pulse" style={{ animationDelay: '0.5s' }} />
+                    <span className="text-gray-300 text-base">{t('tropes.foundFamily')}</span>
                   </div>
                   <div className="flex items-center space-x-2 justify-start">
-                    <Zap className="w-4 h-4 text-red-500 animate-pulse" style={{ animationDelay: '1s' }} />
-                    <span>{t('tropes.selfDiscovery')}</span>
+                    <Zap className="w-6 h-6 text-red-500 animate-pulse" style={{ animationDelay: '1s' }} />
+                    <span className="text-gray-300 text-base">{t('tropes.selfDiscovery')}</span>
                   </div>
                   <div className="flex items-center space-x-2 justify-start">
-                    <Scale className="w-4 h-4 text-orange-500 animate-pulse" style={{ animationDelay: '1.5s' }} />
-                    <span>{t('tropes.ethicalDilemmas')}</span>
+                    <Scale className="w-6 h-6 text-orange-500 animate-pulse" style={{ animationDelay: '1.5s' }} />
+                    <span className="text-gray-300 text-base">{t('tropes.ethicalDilemmas')}</span>
                   </div>
                   <div className="flex items-center space-x-2 justify-start">
-                    <Building className="w-4 h-4 text-red-500 animate-pulse" style={{ animationDelay: '2s' }} />
-                    <span>{t('tropes.politicalStakes')}</span>
+                    <Building className="w-6 h-6 text-red-500 animate-pulse" style={{ animationDelay: '2s' }} />
+                    <span className="text-gray-300 text-base">{t('tropes.politicalStakes')}</span>
                   </div>
                   <div className="flex items-center space-x-2 justify-start">
-                    <Flame className="w-4 h-4 text-orange-500 animate-pulse" style={{ animationDelay: '2.5s' }} />
-                    <span>{t('tropes.slowBurn')}</span>
+                    <Flame className="w-6 h-6 text-orange-500 animate-pulse" style={{ animationDelay: '2.5s' }} />
+                    <span className="text-gray-300 text-base">{t('tropes.slowBurn')}</span>
                   </div>
                 </motion.div>
               </motion.div>
