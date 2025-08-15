@@ -22,7 +22,7 @@ const ScrollToTop = () => {
 function App() {
   return (
     <LanguageProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <div className="min-h-screen relative">
           {/* Fixed Fire Background */}
           <div className="fixed inset-0 bg-black">
