@@ -98,11 +98,11 @@ const translations = {
     'excerpt.subtitle': 'The Greater Good',
     'excerpt.continue': 'Continue Maya\'s journey and discover the truth behind the Order.',
     'excerpt.getBook': 'Wishlist Le Péril',
-    'excerpt.available': 'Available in digital and paperback formats',
+    'excerpt.available': 'Available in digital format',
     
     // Footer
     'footer.contact': 'Contact:',
-    'footer.rights': '© 2024 Le Péril. All rights reserved.'
+    'footer.rights': '© 2025 Le Péril. All rights reserved.'
   },
   fr: {
     // Navigation
@@ -191,11 +191,11 @@ const translations = {
     'excerpt.subtitle': 'Le Bien Commun',
     'excerpt.continue': 'Continuez le voyage de Maya et découvrez la vérité derrière l\'Ordre.',
     'excerpt.getBook': 'Prévenez-moi à la sortie',
-    'excerpt.available': 'Disponible en formats numérique et papier',
+    'excerpt.available': 'Disponible en format numérique',
     
     // Footer
     'footer.contact': 'Contact :',
-    'footer.rights': '© 2024 Le Péril. Tous droits réservés.'
+    'footer.rights': '© 2025 Le Péril. Tous droits réservés.'
   }
 };
 
