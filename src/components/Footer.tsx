@@ -29,10 +29,10 @@ const Footer = () => {
             <div className="flex items-center space-x-2 justify-center sm:justify-start">
               <span className="text-sm text-gray-400">{t('footer.contact')}</span>
               <a
-                href="mailto:contact@leperil.com"
+                href="mailto:manon.cqds@gmail.com"
                 className="text-sm text-red-400 hover:text-red-300 transition-colors duration-300 font-medium"
               >
-                contact@leperil.com
+                manon.cqds@gmail.com
               </a>
             </div>
             
@@ -42,7 +42,7 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex items-center space-x-4 justify-center sm:justify-start">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/manon.coquard/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group text-gray-400 hover:text-red-400 transition-all duration-300"
@@ -51,7 +51,7 @@ const Footer = () => {
               </a>
               
               <a
-                href="https://tiktok.com"
+                href="https://www.tiktok.com/@manon.cqd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group text-gray-400 hover:text-red-400 transition-all duration-300"

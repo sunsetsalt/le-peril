@@ -71,7 +71,7 @@ const Quiz = () => {
                   className="relative"
                 >
                   <div className="w-12 h-12 md:w-16 md:h-16 border-2 border-red-600 transform rotate-45 relative">
-                    <div className="absolute inset-[2px] border-4 border-black"></div>
+                    <div className="absolute inset-[2px] border-4 border-gray-700"></div>
                   </div>
                   <motion.div
                     animate={{ opacity: [0.3, 0.8, 0.3] }}
@@ -116,7 +116,7 @@ const Quiz = () => {
               >
                 <div className="mb-6 md:mb-8">
                   <div className="flex justify-center mb-4">
-                    <span className="text-sm text-red-400 font-medium">
+                    <span className="text-base text-red-400 font-medium">
                       {t('quiz.question')} {currentQuestion + 1} {t('quiz.of')} {questions.length}
                     </span>
                   </div>
@@ -173,7 +173,7 @@ const Quiz = () => {
               className="relative"
             >
               <div className="w-16 h-16 md:w-20 md:h-20 border-2 border-red-600 transform rotate-45 relative">
-                <div className="absolute inset-[2px] border-4 border-black"></div>
+                <div className="absolute inset-[2px] border-4 border-gray-700"></div>
               </div>
               <motion.div
                 animate={{ opacity: [0.3, 0.8, 0.3] }}

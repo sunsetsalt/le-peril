@@ -23,7 +23,7 @@ const translations = {
     'home.subtitle': 'Volume 1, to be released late 2025 as an eBook',
     'home.quote': 'How far can we go in the name of the',
     'home.greaterGood': 'greater good',
-    'home.enterWorld': 'Immerse yourself in the world',
+    'home.enterWorld': 'Immerse yourself',
     'home.synopsis': 'Synopsis',
     'home.discoverAllegiance': 'Which faction do you belong to?',
     
@@ -116,7 +116,7 @@ const translations = {
     'home.subtitle': 'Tome 1, à paraître fin 2025 en eBook',
     'home.quote': 'Jusqu\'où peut-on aller au nom du',
     'home.greaterGood': 'bien commun ',
-    'home.enterWorld': 'Plonger dans l\'univers',
+    'home.enterWorld': 'Plongez dans l\'univers',
     'home.synopsis': 'Synopsis',
     'home.discoverAllegiance': 'À quelle faction appartenez-vous ?',
     
