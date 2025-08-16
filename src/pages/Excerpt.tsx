@@ -70,7 +70,7 @@ const Excerpt = () => {
           </div>
           
           <a
-            href="https://amazon.com"
+            href="https://forms.gle/3eMrUnTXJM1xEMJN7"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-red-700 to-red-800 hover:from-red-600 hover:to-red-700 text-white px-12 py-4 rounded-lg font-semibold text-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-500/50 relative overflow-hidden group"

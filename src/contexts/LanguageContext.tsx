@@ -20,25 +20,26 @@ const translations = {
     
     // Home page
     'home.title': 'Le Péril',
-    'home.subtitle': 'A Dystopian Novel',
+    'home.subtitle': 'Volume 1, to be released late 2025 as an eBook',
     'home.quote': 'How far can we go in the name of the',
     'home.greaterGood': 'greater good',
-    'home.enterWorld': 'Enter the World',
+    'home.enterWorld': 'Immerse yourself in the world',
     'home.synopsis': 'Synopsis',
-    'home.discoverAllegiance': 'Discover Your Allegiance',
+    'home.discoverAllegiance': 'Which faction do you belong to?',
     
     // Tropes
     'tropes.dystopian': 'Dystopian Fiction',
     'tropes.foundFamily': 'Found Family',
     'tropes.selfDiscovery': 'Self-Discovery',
     'tropes.ethicalDilemmas': 'Ethical Dilemmas',
+    'tropes.ethicalDilemmasMobile': 'Ethical Dilemmas',
     'tropes.politicalStakes': 'Political Stakes',
     'tropes.slowBurn': 'Slow Burn Romance',
     
     // Synopsis paragraphs
-    'synopsis.p1': 'In a world where the line between salvation and destruction has been erased, Maya Chen discovers that the very system meant to protect humanity might be its greatest threat. The Order promises safety, unity, and purpose—but at what cost?',
-    'synopsis.p2': 'When Maya uncovers the dark truth behind the government\'s \'greater good\' initiatives, she must choose between the comfortable lies that keep society stable and the dangerous truths that could tear everything apart. Every choice carries weight. Every action has consequences.',
-    'synopsis.p3': 'As she navigates the treacherous waters of rebellion and loyalty, Maya learns that the most dangerous enemy isn\'t always the one you can see. Sometimes, the greatest peril lies in the choices we make when we believe we\'re doing the right thing.',
+    'synopsis.p1': 'Thanks to the Program, the inhabitants of the Territories of Nol can offer a chosen portion of their lives to strengthen the Aetheranium, the protective barrier that shields them from the Breath.',
+    'synopsis.p2': 'But during one collection, a woman dies. This unprecedented incident sparks a deep and violent crisis between the defenders of the Program and those in whom doubt has begun to take root.',
+    'synopsis.p3': 'Joseph, founder of the Program, must uphold it at all costs. Aylin, his niece and a young Aspirant, begins to glimpse the first cracks in what she once believed unshakable, and Cal, a determined dissident, sees in it the spark he had been waiting for.',
     
     // Quiz page
     'quiz.title': 'Will you be a',
@@ -64,7 +65,7 @@ const translations = {
     'excerpt.content.p3': 'Maya\'s fingers tightened around the data pad in her coat pocket. The weight of what she\'d discovered pressed against her ribs like a knife. Seven years of announcements. Seven years of promises. And now she knew the truth about what those promises really meant.',
     'excerpt.content.p4': 'A shadow moved in her peripheral vision—another citizen, head down, moving with the practiced efficiency the Order demanded. Maya forced herself to mirror the posture, to blend in, even as her heart hammered against her chest.',
     'excerpt.content.p5': 'She had to make a choice. And in New Eden, the wrong choice didn\'t just mean punishment—it meant erasure.',
-    'excerpt.content.p6': 'The question wasn\'t whether she could live with the truth. The question was whether she could live without it.',
+    'excerpt.content.p6': 'When choices must be made, only ashes will remain.',
     
     // Quiz questions
     'quiz.q1': 'A new law is passed that restricts personal freedoms but promises greater security. Your reaction?',
@@ -112,25 +113,26 @@ const translations = {
     
     // Home page
     'home.title': 'Le Péril',
-    'home.subtitle': 'Un Roman Dystopique',
+    'home.subtitle': 'Tome 1, à paraître fin 2025 en eBook',
     'home.quote': 'Jusqu\'où peut-on aller au nom du',
-    'home.greaterGood': 'bien commun',
-    'home.enterWorld': 'Entrer dans l\'univers',
+    'home.greaterGood': 'bien commun ',
+    'home.enterWorld': 'Plonger dans l\'univers',
     'home.synopsis': 'Synopsis',
-    'home.discoverAllegiance': 'Découvrez votre allégeance',
+    'home.discoverAllegiance': 'À quelle faction appartenez-vous ?',
     
     // Tropes
     'tropes.dystopian': 'Dystopie',
     'tropes.foundFamily': 'Found family',
     'tropes.selfDiscovery': 'Quête de soi',
     'tropes.ethicalDilemmas': 'Dilemmes éthiques',
+    'tropes.ethicalDilemmasMobile': 'Enjeux éthiques',
     'tropes.politicalStakes': 'Enjeux politiques',
     'tropes.slowBurn': 'Slow burn',
     
     // Synopsis paragraphs
-    'synopsis.p1': 'Dans un monde où la frontière entre salut et destruction a été effacée, Maya Chen découvre que le système même censé protéger l\'humanité pourrait être sa plus grande menace. L\'Ordre promet sécurité, unité et but—mais à quel prix ?',
-    'synopsis.p2': 'Quand Maya découvre la sombre vérité derrière les initiatives du « bien commun » du gouvernement, elle doit choisir entre les mensonges confortables qui maintiennent la stabilité sociale et les vérités dangereuses qui pourraient tout détruire. Chaque choix a du poids. Chaque action a des conséquences.',
-    'synopsis.p3': 'Alors qu\'elle navigue dans les eaux traîtresses de la rébellion et de la loyauté, Maya apprend que l\'ennemi le plus dangereux n\'est pas toujours celui qu\'on peut voir. Parfois, le plus grand péril réside dans les choix que nous faisons quand nous croyons faire ce qui est juste.',
+    'synopsis.p1': 'Grâce au Programme, les habitants des Territoires de Nol peuvent offrir un temps déterminé de leur vie pour renforcer l\’Éthéranium, la barrière protectrice qui les préserve du Souffle.',
+    'synopsis.p2': 'Mais lors d\’une collecte, une femme meurt. Cet incident sans précédent va déclencher une crise profonde et violente entre les défenseurs du Programme et ceux chez qui le doute s\’est immiscé.',
+    'synopsis.p3': 'Joseph, fondateur du Programme, doit le maintenir coûte que coûte. Aylin, sa nièce et jeune Aspirante, voit les premières failles dans ce qu\’elle croyait immuable et Cal, un dissident résolu, voit là l\’étincelle qu\’il attendait.',
     
     // Quiz page
     'quiz.title': 'Serez-vous un',
@@ -156,7 +158,7 @@ const translations = {
     'excerpt.content.p3': 'Les doigts de Maya se resserrèrent autour de la tablette de données dans la poche de son manteau. Le poids de ce qu\'elle avait découvert pesait contre ses côtes comme un couteau. Sept ans d\'annonces. Sept ans de promesses. Et maintenant elle connaissait la vérité sur ce que ces promesses signifiaient vraiment.',
     'excerpt.content.p4': 'Une ombre bougea dans sa vision périphérique—un autre citoyen, tête baissée, se déplaçant avec l\'efficacité pratiquée que l\'Ordre exigeait. Maya se força à imiter cette posture, à se fondre dans la masse, même si son cœur battait la chamade contre sa poitrine.',
     'excerpt.content.p5': 'Elle devait faire un choix. Et à New Eden, le mauvais choix ne signifiait pas seulement une punition—cela signifiait l\'effacement.',
-    'excerpt.content.p6': 'La question n\'était pas de savoir si elle pouvait vivre avec la vérité. La question était de savoir si elle pouvait vivre sans elle.',
+    'excerpt.content.p6': 'À l\’heure des choix, il ne restera que des cendres.',
     
     // Quiz questions
     'quiz.q1': 'Une nouvelle loi est adoptée qui restreint les libertés personnelles mais promet une plus grande sécurité. Votre réaction ?',

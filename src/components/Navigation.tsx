@@ -33,11 +33,8 @@ const Navigation = () => {
           <Link to="/" className="flex items-center space-x-3 group transition-all duration-300 hover:scale-105">
             <div className="relative">
               <motion.div 
-                className="w-6 h-6 border-2 border-red-600 transform rotate-45 relative group-hover:border-red-500 transition-colors duration-300"
-                whileHover={{ rotate: 50, scale: 1.1 }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="absolute inset-[1px] border-2 border-black group-hover:border-gray-900 transition-colors duration-300"></div>
+                className="w-5 h-5 border-2 border-red-800 transform rotate-45 relative group-hover:border-red-700 transition-colors duration-300">
+                <div className="absolute inset-[1px] border-2 border-gray-600 group-hover:border-gray-500 transition-colors duration-300"></div>
               </motion.div>
               <motion.div
                 animate={{ opacity: [0.3, 0.8, 0.3] }}
@@ -108,10 +105,10 @@ const Navigation = () => {
             
             {/* CTA Button */}
             <motion.a
-              href="https://amazon.com"
+              href="https://forms.gle/3eMrUnTXJM1xEMJN7"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-6 py-2 rounded-lg font-medium text-sm transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-red-500/30 relative overflow-hidden group"
+              className="bg-gradient-to-r from-red-800 to-red-900 hover:from-red-700 hover:to-red-800 text-white px-6 py-2 rounded-lg font-medium text-sm transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-red-500/30 relative overflow-hidden group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -191,7 +188,7 @@ const Navigation = () => {
                 </motion.div>
               ))}
               <motion.a
-                href="https://amazon.com"
+                href="https://forms.gle/3eMrUnTXJM1xEMJN7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-2 rounded-lg font-medium text-sm text-center mt-4 hover:from-red-700 hover:to-red-800 transition-all duration-300"

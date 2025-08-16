@@ -118,7 +118,7 @@ const Home = () => {
                 transition={{ duration: 1, delay: 0.8 }}
                 className="text-xl md:text-2xl lg:text-3xl font-serif text-red-400 italic leading-relaxed"
               >
-                "{t('home.quote')}{' '}
+                {t('home.quote')}{' '}
                 <motion.span 
                   className="text-red-500 font-semibold relative"
                   animate={{ 
@@ -134,7 +134,7 @@ const Home = () => {
                     transition={{ duration: 1, delay: 1.5 }}
                   />
                 </motion.span>
-                ?"
+                ?
               </motion.p>
 
               {/* CTA Buttons */}
@@ -168,7 +168,7 @@ const Home = () => {
                   </motion.button>
                   
                   <motion.a
-                    href="https://amazon.com"
+                    href="https://forms.gle/3eMrUnTXJM1xEMJN7"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group relative text-gray-400 hover:text-white px-6 py-3 font-semibold text-lg transition-all duration-300 border border-gray-600 hover:border-red-600 rounded-lg"
@@ -187,7 +187,7 @@ const Home = () => {
                 {/* Mobile-only Get the Book button */}
                 <div className="md:hidden">
                   <motion.a
-                    href="https://amazon.com"
+                    href="https://forms.gle/3eMrUnTXJM1xEMJN7"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group relative text-gray-400 hover:text-white px-6 py-3 font-semibold text-lg transition-all duration-300 border border-gray-600 hover:border-red-600 rounded-lg block text-center"
@@ -365,7 +365,7 @@ const Home = () => {
               </div>
               <div className="flex items-center space-x-2 justify-center">
                 <Scale className="w-5 h-5 text-red-500" />
-                <span>{t('tropes.ethicalDilemmas')}</span>
+                <span>{t('tropes.ethicalDilemmasMobile')}</span>
               </div>
             </motion.div>
 
@@ -376,11 +376,11 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-xl font-serif text-red-400 italic leading-relaxed px-4 max-w-xs"
             >
-              "{t('home.quote')}{' '}
+              {t('home.quote')}{' '}
               <span className="text-red-500 font-semibold">
                 {t('home.greaterGood')}
               </span>
-              ?"
+              ?
             </motion.p>
 
             {/* Mobile CTA */}
@@ -405,7 +405,7 @@ const Home = () => {
                 </motion.button>
                 
                 <motion.a
-                  href="https://amazon.com"
+                  href="https://forms.gle/3eMrUnTXJM1xEMJN7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white px-6 py-2.5 font-semibold text-base transition-all duration-300 border border-gray-600 hover:border-red-600 rounded-lg text-center"
@@ -419,6 +419,18 @@ const Home = () => {
         </div>
 
         {/* Scroll indicator arrow */}
+        <motion.button
+          onClick={() => {
+            document.getElementById('synopsis')?.scrollIntoView({ behavior: 'smooth' });
+          }}
+          className="hidden md:flex absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 p-0 bg-transparent"
+          initial={{ opacity: 0.5, y: 20 }}
+          animate={{ opacity: 1, y: [-10, 14, -10] }}
+          transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
+          aria-label="Scroll down"
+        >
+          <ChevronDown className="w-8 h-8 text-red-500" />
+        </motion.button>
       </section>
 
       {/* Synopsis Section */}
