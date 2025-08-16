@@ -16,7 +16,7 @@ const translations = {
     'nav.synopsis': 'Synopsis',
     'nav.test': 'Test',
     'nav.excerpt': 'Excerpt',
-    'nav.getBook': 'Get the Book',
+    'nav.getBook': 'Wishlist',
     
     // Home page
     'home.title': 'Le Péril',
@@ -96,7 +96,7 @@ const translations = {
     'excerpt.title': 'Chapter One',
     'excerpt.subtitle': 'The Greater Good',
     'excerpt.continue': 'Continue Maya\'s journey and discover the truth behind the Order.',
-    'excerpt.getBook': 'Get Le Péril on Amazon',
+    'excerpt.getBook': 'Whishlist Le Péril',
     'excerpt.available': 'Available in digital and paperback formats',
     
     // Footer
@@ -108,7 +108,7 @@ const translations = {
     'nav.synopsis': 'Synopsis',
     'nav.test': 'Test',
     'nav.excerpt': 'Extrait',
-    'nav.getBook': 'Acheter le livre',
+    'nav.getBook': 'Whishlist',
     
     // Home page
     'home.title': 'Le Péril',
@@ -188,7 +188,7 @@ const translations = {
     'excerpt.title': 'Chapitre Un',
     'excerpt.subtitle': 'Le Bien Commun',
     'excerpt.continue': 'Continuez le voyage de Maya et découvrez la vérité derrière l\'Ordre.',
-    'excerpt.getBook': 'Obtenir Le Péril sur Amazon',
+    'excerpt.getBook': 'Whishlist Le Péril',
     'excerpt.available': 'Disponible en formats numérique et papier',
     
     // Footer
@@ -198,10 +198,10 @@ const translations = {
 };
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('fr');
 
   const t = (key: string): string => {
-    return translations[language][key] || key;
+    return (translations[language] as Record<string, string>)[key] || key;
   };
 
   return (
