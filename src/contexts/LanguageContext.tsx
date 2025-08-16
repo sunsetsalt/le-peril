@@ -96,7 +96,7 @@ const translations = {
     'excerpt.title': 'Chapter One',
     'excerpt.subtitle': 'The Greater Good',
     'excerpt.continue': 'Continue Maya\'s journey and discover the truth behind the Order.',
-    'excerpt.getBook': 'Whishlist Le Péril',
+    'excerpt.getBook': 'Wishlist Le Péril',
     'excerpt.available': 'Available in digital and paperback formats',
     
     // Footer
@@ -108,7 +108,7 @@ const translations = {
     'nav.synopsis': 'Synopsis',
     'nav.test': 'Test',
     'nav.excerpt': 'Extrait',
-    'nav.getBook': 'Whishlist',
+    'nav.getBook': 'Prévenez-moi à la sortie',
     
     // Home page
     'home.title': 'Le Péril',
@@ -188,7 +188,7 @@ const translations = {
     'excerpt.title': 'Chapitre Un',
     'excerpt.subtitle': 'Le Bien Commun',
     'excerpt.continue': 'Continuez le voyage de Maya et découvrez la vérité derrière l\'Ordre.',
-    'excerpt.getBook': 'Whishlist Le Péril',
+    'excerpt.getBook': 'Prévenez-moi à la sortie',
     'excerpt.available': 'Disponible en formats numérique et papier',
     
     // Footer
