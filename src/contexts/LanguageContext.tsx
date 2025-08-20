@@ -40,7 +40,7 @@ const translations = {
     // Synopsis paragraphs
     'synopsis.p1': 'Thanks to the Program, the inhabitants of the Territories of Nol can offer a chosen portion of their lives to strengthen the Aetheranium, the protective barrier that shields them from the Breath.',
     'synopsis.p2': 'But during one collection, a woman dies. This unprecedented incident sparks a deep and violent crisis between the defenders of the Program and those in whom doubt has begun to take root.',
-    'synopsis.p3': 'Joseph, founder of the Program, must uphold it at all costs. Alba, his niece and a young Aspirant, begins to glimpse the first cracks in what she once believed unshakable, and Cal, a determined dissident, sees in it the spark he had been waiting for.',
+    'synopsis.p3': 'Joseph, founder of the Program, must uphold it at all costs. Aylin, his niece and a young Aspirant, begins to glimpse the first cracks in what she once believed unshakable, and Cal, a determined dissident, sees in it the spark he had been waiting for.',
     
     // Quiz page
     'quiz.title': 'Will you be a',
@@ -54,9 +54,9 @@ const translations = {
     'quiz.youAre': 'You are',
     'quiz.aLoyal': 'a Loyal',
     'quiz.aDissident': 'a Dissident',
-    'quiz.loyalMessage': 'Order above all. You believe in the system and trust that collective security is worth individual sacrifice.',
-    'quiz.dissidentMessage': 'The truth only burns those who fear it. You value freedom and truth over comfortable lies.',
-    'quiz.curiousAbout': 'Ready to discover what awaits Alba?',
+    'quiz.loyalMessage': 'Discipline and order. You believe in the system and the established order, even if the common good sometimes demands sacrifices.',
+    'quiz.dissidentMessage': 'Doubt and justice. You place compassion and fairness above all else, even if your thirst for truth may shake the common good.',
+    'quiz.curiousAbout': 'Ready to discover what awaits Aylin?',
     'quiz.readExcerpt': 'Read an Excerpt',
     'quiz.retakeTest': 'Retake Test',
     
@@ -134,7 +134,7 @@ const translations = {
     // Synopsis paragraphs
     'synopsis.p1': 'Grâce au Programme, les habitants des Territoires de Nol peuvent offrir un temps déterminé de leur vie pour renforcer l\’Éthéranium, la barrière protectrice qui les préserve du Souffle.',
     'synopsis.p2': 'Mais lors d\’une collecte, une femme meurt. Cet incident sans précédent va déclencher une crise profonde et violente entre les défenseurs du Programme et ceux chez qui le doute s\’est immiscé.',
-    'synopsis.p3': 'Joseph, fondateur du Programme, doit le maintenir coûte que coûte. Alba, sa nièce et jeune Aspirante, voit les premières failles dans ce qu\’elle croyait immuable et Cal, un dissident résolu, voit là l\’étincelle qu\’il attendait.',
+    'synopsis.p3': 'Joseph, fondateur du Programme, doit le maintenir coûte que coûte. Aylin, sa nièce et jeune Aspirante, voit les premières failles dans ce qu\’elle croyait immuable et Cal, un dissident résolu, voit là l\’étincelle qu\’il attendait.',
     
     // Quiz page
     'quiz.title': 'Serez-vous un',
@@ -148,9 +148,9 @@ const translations = {
     'quiz.youAre': 'Vous êtes',
     'quiz.aLoyal': 'un Loyal',
     'quiz.aDissident': 'un Dissident',
-    'quiz.loyalMessage': 'L\'ordre avant tout. Vous croyez au système et faites confiance au fait que la sécurité collective vaut le sacrifice individuel.',
-    'quiz.dissidentMessage': 'La vérité ne brûle que ceux qui la craignent. Vous valorisez la liberté et la vérité plutôt que les mensonges confortables.',
-    'quiz.curiousAbout': 'Prêt à découvrir ce qui attend Alba ?',
+    'quiz.loyalMessage': 'Rigueur et cadre. Vous croyez au système et à l\'ordre établi, même si le bien commun implique parfois des sacrifies.',
+    'quiz.dissidentMessage': 'Doute et justice. Vous placez la compassion et l\'équité avant le reste, même si votre soif de vérité peut ébranler le bien commun.',
+    'quiz.curiousAbout': 'Prêt à découvrir ce qui attend Aylin ?',
     'quiz.readExcerpt': 'Lire un extrait',
     'quiz.retakeTest': 'Refaire le test',
     
