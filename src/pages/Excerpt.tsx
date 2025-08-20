@@ -29,7 +29,7 @@ const Excerpt = () => {
           className="prose prose-lg prose-invert max-w-none"
         >
           <div className="bg-black/30 backdrop-blur-sm rounded-lg p-8 md:p-12 border border-red-900/20">
-            <div className="font-serif text-gray-200 leading-relaxed space-y-6">
+            <div className="font-serif text-gray-200 leading-relaxed space-y-6 text-justify">
               <p className="text-xl md:text-xl first-letter:text-7xl first-letter:font-bold first-letter:text-red-500 first-letter:float-left first-letter:mr-3 first-letter:mt-1">
                 {t('excerpt.content.p1')}
               </p>

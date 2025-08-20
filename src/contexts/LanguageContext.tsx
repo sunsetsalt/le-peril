@@ -35,7 +35,7 @@ const translations = {
     'tropes.ethicalDilemmas': 'Ethical Dilemmas',
     'tropes.ethicalDilemmasMobile': 'Ethical Dilemmas',
     'tropes.politicalStakes': 'Political Stakes',
-    'tropes.slowBurn': 'Slow Burn Romance',
+    'tropes.slowBurn': 'Slow Burn',
     
     // Synopsis paragraphs
     'synopsis.p1': 'Thanks to the Program, the inhabitants of the Territories of Nol can offer a chosen portion of their lives to strengthen the Aetheranium, the protective barrier that shields them from the Breath.',
@@ -56,13 +56,13 @@ const translations = {
     'quiz.aDissident': 'a Dissident',
     'quiz.loyalMessage': 'Order above all. You believe in the system and trust that collective security is worth individual sacrifice.',
     'quiz.dissidentMessage': 'The truth only burns those who fear it. You value freedom and truth over comfortable lies.',
-    'quiz.curiousAbout': 'Curious about Maya\'s journey and the choices that await her?',
+    'quiz.curiousAbout': 'Ready to discover what awaits Alba?',
     'quiz.readExcerpt': 'Read an Excerpt',
     'quiz.retakeTest': 'Retake Test',
     
     // Excerpt content (English)
     'excerpt.content.p1': 'The Program is, above all, a promise. A promise made to every inhabitant of the Territories of Nol. A promise of a radiant future, where the Breath is no more… Joseph Stern recited solemnly in front of his mirror, focused on the expression of his face. He nodded, satisfied with the closing line of his speech.',
-    'excerpt.content.p2': 'His gaze was sharp, his deep voice steady under all circumstances, his diction flawless. He excelled at the art of persuasion, skillfully weaving between words and numbers. Joseph was not merely gifted—he was brilliant. He had succeeded where all others had failed before him. He had found a way to sustain the Etheranium.',
+    'excerpt.content.p2': 'His gaze was sharp, his deep voice steady under all circumstances, his diction flawless. He excelled at the art of persuasion, skillfully weaving between words and numbers. Joseph was not merely gifted, he was brilliant. He had succeeded where all others had failed before him. He had found a way to sustain the Etheranium.',
     'excerpt.content.p3': 'It had begun as a childhood dream, then an adolescent obsession, and finally the very reason he lived as an adult. He never understood how others could go about their lives without the constant terror that the Breath might condemn them.',
     'excerpt.content.p4': 'For so long he had been angry, resenting them for their selfishness and their ingratitude. Had they forgotten that men had sacrificed themselves so they could live with such lightness of being?',
     'excerpt.content.p5': ' He never could.',
@@ -150,7 +150,7 @@ const translations = {
     'quiz.aDissident': 'un Dissident',
     'quiz.loyalMessage': 'L\'ordre avant tout. Vous croyez au système et faites confiance au fait que la sécurité collective vaut le sacrifice individuel.',
     'quiz.dissidentMessage': 'La vérité ne brûle que ceux qui la craignent. Vous valorisez la liberté et la vérité plutôt que les mensonges confortables.',
-    'quiz.curiousAbout': 'Curieux du voyage de Maya et des choix qui l\'attendent ?',
+    'quiz.curiousAbout': 'Prêt à découvrir ce qui attend Alba ?',
     'quiz.readExcerpt': 'Lire un extrait',
     'quiz.retakeTest': 'Refaire le test',
     
