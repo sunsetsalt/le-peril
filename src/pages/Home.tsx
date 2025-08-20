@@ -100,13 +100,25 @@ const Home = () => {
                 </motion.div>
               </motion.div>
 
-              {/* Subtitle */}
+              {/* First Subtitle */}
               <motion.div
+                className="!mt-2"
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.6 }}
               >
-                <p className="text-lg md:text-xl text-gray-400 font-light tracking-wide">
+                <p className="text-xl md:text-2xl text-gray-200 font-light italic tracking-wide">
+                  {t('home.firstsubtitle')}
+                </p>
+              </motion.div>
+
+              {/* Subtitle */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, delay: 0.8 }}
+              >
+                <p className="text-lg md:text-xl text-gray-300 font-light tracking-wide">
                   {t('home.subtitle')}
                 </p>
               </motion.div>
@@ -115,7 +127,7 @@ const Home = () => {
               <motion.p
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, delay: 0.8 }}
+                transition={{ duration: 1, delay: 1 }}
                 className="text-xl md:text-2xl lg:text-3xl font-serif text-red-400 italic leading-relaxed"
               >
                 {t('home.quote')}{' '}

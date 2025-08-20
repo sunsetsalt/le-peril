@@ -20,6 +20,7 @@ const translations = {
     
     // Home page
     'home.title': 'Le Péril',
+    'home.firstsubtitle': 'Those who burn',
     'home.subtitle': 'Volume 1, to be released late 2025 as an eBook',
     'home.quote': 'How far can we go in the name of the',
     'home.greaterGood': 'greater good',
@@ -39,7 +40,7 @@ const translations = {
     // Synopsis paragraphs
     'synopsis.p1': 'Thanks to the Program, the inhabitants of the Territories of Nol can offer a chosen portion of their lives to strengthen the Aetheranium, the protective barrier that shields them from the Breath.',
     'synopsis.p2': 'But during one collection, a woman dies. This unprecedented incident sparks a deep and violent crisis between the defenders of the Program and those in whom doubt has begun to take root.',
-    'synopsis.p3': 'Joseph, founder of the Program, must uphold it at all costs. Aylin, his niece and a young Aspirant, begins to glimpse the first cracks in what she once believed unshakable, and Cal, a determined dissident, sees in it the spark he had been waiting for.',
+    'synopsis.p3': 'Joseph, founder of the Program, must uphold it at all costs. Alba, his niece and a young Aspirant, begins to glimpse the first cracks in what she once believed unshakable, and Cal, a determined dissident, sees in it the spark he had been waiting for.',
     
     // Quiz page
     'quiz.title': 'Will you be a',
@@ -59,39 +60,38 @@ const translations = {
     'quiz.readExcerpt': 'Read an Excerpt',
     'quiz.retakeTest': 'Retake Test',
     
-    // Excerpt content
-    'excerpt.content.p1': 'The announcement crackled through every speaker in the city at exactly noon, just as it had every day for the past seven years. Maya Chen paused mid-step on the cracked pavement, her breath visible in the cold autumn air as the familiar voice of Director Hawthorne filled the empty streets.',
-    'excerpt.content.p2': '"Citizens of New Eden, your dedication to the Order ensures our collective prosperity. Today\'s productivity quotas have been exceeded by point-seven percent. This achievement brings us closer to the promised tomorrow."',
-    'excerpt.content.p3': 'Maya\'s fingers tightened around the data pad in her coat pocket. The weight of what she\'d discovered pressed against her ribs like a knife. Seven years of announcements. Seven years of promises. And now she knew the truth about what those promises really meant.',
-    'excerpt.content.p4': 'A shadow moved in her peripheral vision—another citizen, head down, moving with the practiced efficiency the Order demanded. Maya forced herself to mirror the posture, to blend in, even as her heart hammered against her chest.',
-    'excerpt.content.p5': 'She had to make a choice. And in New Eden, the wrong choice didn\'t just mean punishment—it meant erasure.',
-    'excerpt.content.p6': 'When choices must be made, only ashes will remain.',
+    // Excerpt content (English)
+    'excerpt.content.p1': 'The Program is, above all, a promise. A promise made to every inhabitant of the Territories of Nol. A promise of a radiant future, where the Breath is no more…” Joseph Stern recited solemnly in front of his mirror, focused on the expression of his face. He nodded, satisfied with the closing line of his speech.',
+    'excerpt.content.p2': 'His gaze was sharp, his deep voice steady under all circumstances, his diction flawless. He excelled at the art of persuasion, skillfully weaving between words and numbers. Joseph was not merely gifted—he was brilliant. He had succeeded where all others had failed before him. He had found a way to sustain the Etheranium.',
+    'excerpt.content.p3': 'It had begun as a childhood dream, then an adolescent obsession, and finally the very reason he lived as an adult. He never understood how others could go about their lives without the constant terror that the Breath might condemn them.',
+    'excerpt.content.p4': 'For so long he had been angry, resenting them for their selfishness and their ingratitude. Had they forgotten that men had sacrificed themselves so they could live with such lightness of being? He never could.',
+    'excerpt.content.p5': 'When choices must be made, only ashes will remain.',
     
-    // Quiz questions
-    'quiz.q1': 'A new law is passed that restricts personal freedoms but promises greater security. Your reaction?',
-    'quiz.q1a1': 'Support it completely—security is more important than individual freedoms',
-    'quiz.q1a2': 'Question the necessity and seek more information about its implementation',
-    'quiz.q1a3': 'Oppose it actively—no law should restrict personal freedoms',
-    
-    'quiz.q2': 'You discover information that could expose corruption in leadership. What do you do?',
-    'quiz.q2a1': 'Report it through official channels and trust the system to handle it',
-    'quiz.q2a2': 'Carefully investigate further before deciding on action',
-    'quiz.q2a3': 'Share it publicly regardless of the consequences',
-    
-    'quiz.q3': 'When faced with an order that conflicts with your personal morals:',
-    'quiz.q3a1': 'Follow the order—the greater good requires sacrifice',
-    'quiz.q3a2': 'Seek clarification and try to find a compromise',
-    'quiz.q3a3': 'Refuse to comply and face the consequences',
-    
-    'quiz.q4': 'The government announces a new surveillance program to \'protect citizens.\' Your thoughts?',
-    'quiz.q4a1': 'Necessary for our safety—those with nothing to hide shouldn\'t worry',
-    'quiz.q4a2': 'Concerning but might be justified if properly regulated',
-    'quiz.q4a3': 'Unacceptable violation of privacy that must be resisted',
-    
-    'quiz.q5': 'You\'re offered a position of power within the current system. You:',
-    'quiz.q5a1': 'Accept it eagerly—you can make positive changes from within',
-    'quiz.q5a2': 'Accept it cautiously, planning to reform what you can',
-    'quiz.q5a3': 'Refuse it—working within a corrupt system only enables it',
+    // Quiz questions (English)
+    'quiz.q1': 'When an order conflicts with your personal morals, what do you do?',
+    'quiz.q1a1': 'I follow it, believing the greater good may require individual sacrifices.',
+    'quiz.q1a2': 'I look for a verifiable compromise (safeguards, alternatives), escalating if needed.',
+    'quiz.q1a3': 'I refuse to comply and fully accept the consequences.',
+
+    'quiz.q2': 'How far would you go to protect yourself and your family from a threat?',
+    'quiz.q2a1': 'I would go to extreme measures, even if it harms others, to guarantee our safety.',
+    'quiz.q2a2': 'I accept heavy constraints, but I refuse to cause direct harm to anyone.',
+    'quiz.q2a3': 'I won’t cross my principles, even if it puts my own survival at risk.',
+
+    'quiz.q3': 'A mechanism could save many lives but will certainly condemn at least one person. What do you do?',
+    'quiz.q3a1': 'I activate it immediately to prevent a greater disaster, while accepting moral responsibility for the choice.',
+    'quiz.q3a2': 'I first look for a realistic alternative (delay, alert, divert) and only activate it as a last resort, with evidence to justify it.',
+    'quiz.q3a3': 'I don’t activate it: I refuse to decide who must die and accept the uncertainty of a higher human cost.',
+
+    'quiz.q4': 'You hold undeniable proof that an institution is corrupt. What do you do?',
+    'quiz.q4a1': 'I delay the release until the situation is secure and a responsible framework is in place.',
+    'quiz.q4a2': 'I publish a contextualized version (what is known/unknown, action plan, limits) while also alerting the proper authorities.',
+    'quiz.q4a3': 'I release everything immediately: truth comes first, even if it shakes the established order.',
+
+    'quiz.q5': 'What would be your greatest regret?',
+    'quiz.q5a1': 'Not having fought hard enough for what is right.',
+    'quiz.q5a2': 'Not having stood by my values and ideals when I had the chance.',
+    'quiz.q5a3': 'Not being able to sacrifice everything for the greater good.',
     
     // Excerpt page
     'excerpt.title': 'Chapter One',
@@ -113,6 +113,7 @@ const translations = {
     
     // Home page
     'home.title': 'Le Péril',
+    'home.firstsubtitle': 'Ceux qui se consument ',
     'home.subtitle': 'Tome 1, à paraître fin 2025 en eBook',
     'home.quote': 'Jusqu\'où peut-on aller au nom du',
     'home.greaterGood': 'bien commun ',
@@ -132,7 +133,7 @@ const translations = {
     // Synopsis paragraphs
     'synopsis.p1': 'Grâce au Programme, les habitants des Territoires de Nol peuvent offrir un temps déterminé de leur vie pour renforcer l\’Éthéranium, la barrière protectrice qui les préserve du Souffle.',
     'synopsis.p2': 'Mais lors d\’une collecte, une femme meurt. Cet incident sans précédent va déclencher une crise profonde et violente entre les défenseurs du Programme et ceux chez qui le doute s\’est immiscé.',
-    'synopsis.p3': 'Joseph, fondateur du Programme, doit le maintenir coûte que coûte. Aylin, sa nièce et jeune Aspirante, voit les premières failles dans ce qu\’elle croyait immuable et Cal, un dissident résolu, voit là l\’étincelle qu\’il attendait.',
+    'synopsis.p3': 'Joseph, fondateur du Programme, doit le maintenir coûte que coûte. Alba, sa nièce et jeune Aspirante, voit les premières failles dans ce qu\’elle croyait immuable et Cal, un dissident résolu, voit là l\’étincelle qu\’il attendait.',
     
     // Quiz page
     'quiz.title': 'Serez-vous un',
@@ -153,38 +154,38 @@ const translations = {
     'quiz.retakeTest': 'Refaire le test',
     
     // Excerpt content
-    'excerpt.content.p1': 'L\'annonce grésilla dans chaque haut-parleur de la ville à exactement midi, comme elle l\'avait fait chaque jour depuis sept ans. Maya Chen s\'arrêta net sur le trottoir fissuré, son souffle visible dans l\'air froid d\'automne tandis que la voix familière du Directeur Hawthorne emplissait les rues vides.',
-    'excerpt.content.p2': '« Citoyens de New Eden, votre dévouement à l\'Ordre assure notre prospérité collective. Les quotas de productivité d\'aujourd\'hui ont été dépassés de zéro virgule sept pour cent. Cette réussite nous rapproche du lendemain promis. »',
-    'excerpt.content.p3': 'Les doigts de Maya se resserrèrent autour de la tablette de données dans la poche de son manteau. Le poids de ce qu\'elle avait découvert pesait contre ses côtes comme un couteau. Sept ans d\'annonces. Sept ans de promesses. Et maintenant elle connaissait la vérité sur ce que ces promesses signifiaient vraiment.',
-    'excerpt.content.p4': 'Une ombre bougea dans sa vision périphérique—un autre citoyen, tête baissée, se déplaçant avec l\'efficacité pratiquée que l\'Ordre exigeait. Maya se força à imiter cette posture, à se fondre dans la masse, même si son cœur battait la chamade contre sa poitrine.',
-    'excerpt.content.p5': 'Elle devait faire un choix. Et à New Eden, le mauvais choix ne signifiait pas seulement une punition—cela signifiait l\'effacement.',
-    'excerpt.content.p6': 'À l\’heure des choix, il ne restera que des cendres.',
+    'excerpt.content.p1': 'Le Programme est avant tout une promesse. Une promesse faite à tous les habitants des Territoires de Nol. Celle d’un avenir radieux, où le Souffle n’est plus… » récita solennellement Joseph Stern devant son miroir, concentré sur l’expression de son visage. Il acquiesça, satisfait par la clôture de son discours.',
+    'excerpt.content.p2': 'Son regard était vif, sa voix grave était maîtrisée en toutes circonstances et son articulation était parfaite. Il excellait dans l’art de convaincre, jonglant savamment entre les mots et les chiffres. Joseph n’était pas seulement doué, il était brillant. Il avait réussi là où tous les autres avaient échoué avant lui. Il avait trouvé comment maintenir l’Ethéranium.',
+    'excerpt.content.p3': 'C’était un rêve d’enfant, devenu une obsession d’adolescent et une raison de vivre à l’âge adulte. Il n’avait jamais compris que ce ne soit pas le cas pour les autres, qu’ils puissent mener leurs vies sans être terrifiés à l’idée que le Souffle ne les condamne.',
+    'excerpt.content.p4': 'Il avait été en colère pendant si longtemps, il leur en voulait pour leur égoïsme et pour leur ingratitude. Avaient-ils oublié que des hommes s’étaient sacrifiés pour qu’ils puissent vivre avec autant de légèreté ? Lui n’avait jamais pu.',
+    'excerpt.content.p5': 'À l\’heure des choix, il ne restera que des cendres.',
     
     // Quiz questions
-    'quiz.q1': 'Une nouvelle loi est adoptée qui restreint les libertés personnelles mais promet une plus grande sécurité. Votre réaction ?',
-    'quiz.q1a1': 'La soutenir complètement—la sécurité est plus importante que les libertés individuelles',
-    'quiz.q1a2': 'Questionner la nécessité et chercher plus d\'informations sur sa mise en œuvre',
-    'quiz.q1a3': 'S\'y opposer activement—aucune loi ne devrait restreindre les libertés personnelles',
-    
-    'quiz.q2': 'Vous découvrez des informations qui pourraient exposer la corruption du leadership. Que faites-vous ?',
-    'quiz.q2a1': 'Le signaler par les canaux officiels et faire confiance au système pour s\'en occuper',
-    'quiz.q2a2': 'Enquêter soigneusement avant de décider d\'une action',
-    'quiz.q2a3': 'Le partager publiquement quelles qu\'en soient les conséquences',
-    
-    'quiz.q3': 'Face à un ordre qui entre en conflit avec votre morale personnelle :',
-    'quiz.q3a1': 'Suivre l\'ordre—le bien commun exige des sacrifices',
-    'quiz.q3a2': 'Chercher des clarifications et essayer de trouver un compromis',
-    'quiz.q3a3': 'Refuser de vous conformer et faire face aux conséquences',
-    
-    'quiz.q4': 'Le gouvernement annonce un nouveau programme de surveillance pour « protéger les citoyens ». Vos pensées ?',
-    'quiz.q4a1': 'Nécessaire pour notre sécurité—ceux qui n\'ont rien à cacher ne devraient pas s\'inquiéter',
-    'quiz.q4a2': 'Préoccupant mais pourrait être justifié s\'il est correctement réglementé',
-    'quiz.q4a3': 'Violation inacceptable de la vie privée qui doit être résistée',
-    
-    'quiz.q5': 'On vous offre un poste de pouvoir dans le système actuel. Vous :',
-    'quiz.q5a1': 'L\'acceptez avec empressement—vous pouvez apporter des changements positifs de l\'intérieur',
-    'quiz.q5a2': 'L\'acceptez avec prudence, prévoyant de réformer ce que vous pouvez',
-    'quiz.q5a3': 'Le refusez—travailler dans un système corrompu ne fait que l\'encourager',
+    'quiz.q1': 'Face à un ordre qui entre en conflit avec votre morale, que faites-vous ?',
+    'quiz.q1a1': 'J’obéis, parce que je crois que le bien commun peut exiger des sacrifices individuels.',
+    'quiz.q1a2': 'J’essaie de construire un compromis vérifiable (garde-fous, alternatives), quitte à escalader si nécessaire.',
+    'quiz.q1a3': 'Je refuse d’obéir et j’assume pleinement les conséquences.',
+
+    'quiz.q2': 'Jusqu’où êtes-vous prêt·e à aller pour repousser une menace qui pèse sur vous et votre famille ?',
+    'quiz.q2a1': 'Je vais jusqu’à des mesures extrêmes, même si elles portent atteinte à d’autres, pour garantir notre sécurité.',
+    'quiz.q2a2': 'J’accepte des contraintes fortes, mais je refuse tout ce qui causerait un tort direct à quelqu’un.',
+    'quiz.q2a3': 'Je refuse d’outrepasser mes principes, même si cela met ma propre survie en jeu.',
+
+    'quiz.q3': 'Un mécanisme peut sauver de nombreuses vies, mais condamnera au moins une personne. Que faites-vous ?',
+    'quiz.q3a1': 'Je l’active immédiatement, pour éviter un désastre plus large, tout en assumant la responsabilité morale de ce choix.',
+    'quiz.q3a2': 'Je cherche d’abord une alternative réaliste (ralentir, alerter, détourner) et je n’active qu’en ultime recours, preuves à l’appui.',
+    'quiz.q3a3': 'Je ne l’active pas : je refuse de décider qui doit mourir et j’assume l’incertitude d’un coût humain plus élevé.',
+
+    'quiz.q4': 'Vous détenez une preuve accablante qu\'une institution est corrompue. Que faites-vous ?',
+    'quiz.q4a1': 'Je diffère la publication le temps de sécuriser la situation et d’organiser un cadre de réception responsable.',
+    'quiz.q4a2': 'Je publie une version contextualisée (ce qui est su/ignoré, plan d’action, limites) et j’alerte en parallèle les autorités compétentes.',
+    'quiz.q4a3': 'Je publie immédiatement l’intégralité des éléments : la vérité prime, même si elle bouscule l’ordre établi.',
+
+    'quiz.q5': 'Quel serait-votre plus grand regret ?',
+    'quiz.q5a1': 'Ne pas m\'être suffisamment battu.e pour ce qui est juste.',
+    'quiz.q5a2': 'Ne pas avoir porté mes valeurs et idéaux lorsque j\'en avais l\'occasion.',
+    'quiz.q5a3': 'Ne pas avoir été capable de tout sacrifier pour le bien commun.',
+
     
     // Excerpt page
     'excerpt.title': 'Chapitre Un',

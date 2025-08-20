@@ -45,13 +45,8 @@ const Excerpt = () => {
               <p className="text-xl md:text-lg lg:text-xl">
                 {t('excerpt.content.p4')}
               </p>
-              
-              <p className="text-xl md:text-lg lg:text-xl">
-                {t('excerpt.content.p5')}
-              </p>
-              
               <p className="text-xl md:text-lg lg:text-xl italic text-red-400">
-                {t('excerpt.content.p6')}
+                {t('excerpt.content.p5')}
               </p>
             </div>
           </div>
