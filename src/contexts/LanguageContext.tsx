@@ -61,7 +61,7 @@ const translations = {
     'quiz.retakeTest': 'Retake Test',
     
     // Excerpt content (English)
-    'excerpt.content.p1': 'The Program is, above all, a promise. A promise made to every inhabitant of the Territories of Nol. A promise of a radiant future, where the Breath is no more…” Joseph Stern recited solemnly in front of his mirror, focused on the expression of his face. He nodded, satisfied with the closing line of his speech.',
+    'excerpt.content.p1': 'The Program is, above all, a promise. A promise made to every inhabitant of the Territories of Nol. A promise of a radiant future, where the Breath is no more… Joseph Stern recited solemnly in front of his mirror, focused on the expression of his face. He nodded, satisfied with the closing line of his speech.',
     'excerpt.content.p2': 'His gaze was sharp, his deep voice steady under all circumstances, his diction flawless. He excelled at the art of persuasion, skillfully weaving between words and numbers. Joseph was not merely gifted—he was brilliant. He had succeeded where all others had failed before him. He had found a way to sustain the Etheranium.',
     'excerpt.content.p3': 'It had begun as a childhood dream, then an adolescent obsession, and finally the very reason he lived as an adult. He never understood how others could go about their lives without the constant terror that the Breath might condemn them.',
     'excerpt.content.p4': 'For so long he had been angry, resenting them for their selfishness and their ingratitude. Had they forgotten that men had sacrificed themselves so they could live with such lightness of being? He never could.',
@@ -95,7 +95,7 @@ const translations = {
     
     // Excerpt page
     'excerpt.title': 'Chapter One',
-    'excerpt.subtitle': 'The Greater Good',
+    'excerpt.subtitle': 'The Ceremony',
     'excerpt.continue': 'Continue Maya\'s journey and discover the truth behind the Order.',
     'excerpt.getBook': 'Wishlist Le Péril',
     'excerpt.available': 'Available in digital format',
@@ -154,7 +154,7 @@ const translations = {
     'quiz.retakeTest': 'Refaire le test',
     
     // Excerpt content
-    'excerpt.content.p1': 'Le Programme est avant tout une promesse. Une promesse faite à tous les habitants des Territoires de Nol. Celle d’un avenir radieux, où le Souffle n’est plus… » récita solennellement Joseph Stern devant son miroir, concentré sur l’expression de son visage. Il acquiesça, satisfait par la clôture de son discours.',
+    'excerpt.content.p1': 'Le Programme est avant tout une promesse. Une promesse faite à tous les habitants des Territoires de Nol. Celle d’un avenir radieux, où le Souffle n’est plus… récita solennellement Joseph Stern devant son miroir, concentré sur l’expression de son visage. Il acquiesça, satisfait par la clôture de son discours.',
     'excerpt.content.p2': 'Son regard était vif, sa voix grave était maîtrisée en toutes circonstances et son articulation était parfaite. Il excellait dans l’art de convaincre, jonglant savamment entre les mots et les chiffres. Joseph n’était pas seulement doué, il était brillant. Il avait réussi là où tous les autres avaient échoué avant lui. Il avait trouvé comment maintenir l’Ethéranium.',
     'excerpt.content.p3': 'C’était un rêve d’enfant, devenu une obsession d’adolescent et une raison de vivre à l’âge adulte. Il n’avait jamais compris que ce ne soit pas le cas pour les autres, qu’ils puissent mener leurs vies sans être terrifiés à l’idée que le Souffle ne les condamne.',
     'excerpt.content.p4': 'Il avait été en colère pendant si longtemps, il leur en voulait pour leur égoïsme et pour leur ingratitude. Avaient-ils oublié que des hommes s’étaient sacrifiés pour qu’ils puissent vivre avec autant de légèreté ? Lui n’avait jamais pu.',
@@ -189,7 +189,7 @@ const translations = {
     
     // Excerpt page
     'excerpt.title': 'Chapitre Un',
-    'excerpt.subtitle': 'Le Bien Commun',
+    'excerpt.subtitle': 'La Cérémonie',
     'excerpt.continue': 'Continuez le voyage de Maya et découvrez la vérité derrière l\'Ordre.',
     'excerpt.getBook': 'Prévenez-moi à la sortie',
     'excerpt.available': 'Disponible en format numérique',
