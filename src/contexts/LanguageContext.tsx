@@ -61,7 +61,7 @@ const translations = {
     'quiz.retakeTest': 'Retake Test',
     
     // Excerpt content (English)
-    'excerpt.content.p1': 'The Program is, above all, a promise. A promise made to every inhabitant of the Territories of Nol. A promise of a radiant future, where the Breath is no more… Joseph Stern recited solemnly in front of his mirror, focused on the expression of his face. He nodded, satisfied with the closing line of his speech.',
+    'excerpt.content.p1': 'Joseph Stern stood before the mirror, studying the expression on his face. “The Program is, above all, a promise. A promise made to every inhabitant of the Territories of Nol. A promise of a brighter future, where the Breath is no more…” he recited solemnly. He nodded to himself, satisfied with the way his speech concluded.',
     'excerpt.content.p2': 'His gaze was sharp, his deep voice steady under all circumstances, his diction flawless. He excelled at the art of persuasion, skillfully weaving between words and numbers. Joseph was not merely gifted, he was brilliant. He had succeeded where all others had failed before him. He had found a way to sustain the Etheranium.',
     'excerpt.content.p3': 'It had begun as a childhood dream, then an adolescent obsession, and finally the very reason he lived as an adult. He never understood how others could go about their lives without the constant terror that the Breath might condemn them.',
     'excerpt.content.p4': 'For so long he had been angry, resenting them for their selfishness and their ingratitude. Had they forgotten that men had sacrificed themselves so they could live with such lightness of being?',
@@ -103,6 +103,7 @@ const translations = {
     
     // Footer
     'footer.contact': 'Contact:',
+    'footer.cover': 'Illustrated cover by Rosemarijn Keppel',
     'footer.rights': '© 2025 Le Péril. All rights reserved.'
   },
   fr: {
@@ -134,7 +135,7 @@ const translations = {
     // Synopsis paragraphs
     'synopsis.p1': 'Grâce au Programme, les habitants des Territoires de Nol peuvent offrir un temps déterminé de leur vie pour renforcer l\’Éthéranium, la barrière protectrice qui les préserve du Souffle.',
     'synopsis.p2': 'Mais lors d\’une collecte, une femme meurt. Cet incident sans précédent va déclencher une crise profonde et violente entre les défenseurs du Programme et ceux chez qui le doute s\’est immiscé.',
-    'synopsis.p3': 'Joseph, fondateur du Programme, doit le maintenir coûte que coûte. Aylin, sa nièce et jeune Aspirante, voit les premières failles dans ce qu\’elle croyait immuable et Cal, un dissident résolu, voit là l\’étincelle qu\’il attendait.',
+    'synopsis.p3': 'Joseph, fondateur du Programme, doit le maintenir coûte que coûte. Aylin, sa nièce et jeune Aspirante, découvre les premières failles dans ce qu\’elle croyait immuable et Cal, un dissident résolu, voit là l\’étincelle qu\’il attendait.',
     
     // Quiz page
     'quiz.title': 'Serez-vous un',
@@ -155,7 +156,7 @@ const translations = {
     'quiz.retakeTest': 'Refaire le test',
     
     // Excerpt content
-    'excerpt.content.p1': 'Le Programme est avant tout une promesse. Une promesse faite à tous les habitants des Territoires de Nol. Celle d’un avenir radieux, où le Souffle n’est plus… récita solennellement Joseph Stern devant son miroir, concentré sur l’expression de son visage. Il acquiesça, satisfait par la clôture de son discours.',
+    'excerpt.content.p1': 'Joseph Stern se tenait devant son miroir, concentré sur l’expression de son visage. « Le Programme est avant tout une promesse. Une promesse faite à tous les habitants des Territoires de Nol. Celle d’un avenir radieux, où le Souffle n’est plus… » récita-t-il solennellement. Il acquiesça, satisfait par la clôture de son discours.',
     'excerpt.content.p2': 'Son regard était vif, sa voix grave était maîtrisée en toutes circonstances et son articulation était parfaite. Il excellait dans l’art de convaincre, jonglant savamment entre les mots et les chiffres. Joseph n’était pas seulement doué, il était brillant. Il avait réussi là où tous les autres avaient échoué avant lui. Il avait trouvé comment maintenir l’Ethéranium.',
     'excerpt.content.p3': 'C’était un rêve d’enfant, devenu une obsession d’adolescent et une raison de vivre à l’âge adulte. Il n’avait jamais compris que ce ne soit pas le cas pour les autres, qu’ils puissent mener leurs vies sans être terrifiés à l’idée que le Souffle ne les condamne.',
     'excerpt.content.p4': 'Il avait été en colère pendant si longtemps, il leur en voulait pour leur égoïsme et pour leur ingratitude. Avaient-ils oublié que des hommes s’étaient sacrifiés pour qu’ils puissent vivre avec autant de légèreté ?',
@@ -199,6 +200,7 @@ const translations = {
     
     // Footer
     'footer.contact': 'Contact :',
+    'footer.cover': 'Couverture illustrée par Rosemarijn Keppel',
     'footer.rights': '© 2025 Le Péril. Tous droits réservés.'
   }
 };

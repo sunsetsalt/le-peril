@@ -69,6 +69,9 @@ const Footer = () => {
             viewport={{ once: true }}
           >
             <p className="text-xs text-gray-500 text-center md:text-right">
+              {t('footer.cover')}
+            </p>
+            <p className="text-xs text-gray-500 text-center md:text-right">
               {t('footer.rights')}
             </p>
           </motion.div>

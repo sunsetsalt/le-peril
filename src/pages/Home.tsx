@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 import TropesList from '../components/TropesList';
-import coverImg from '../assets/cover-1.png';
+import coverImgFR from '../assets/bookcover-fr.png';
+import coverImgEN from '../assets/bookcover-en.png';
 import { ChevronDown, Flame, Eye, Shield, Zap, Square, Droplets, Leaf, Scale, Building } from 'lucide-react';
 
 const Home = () => {
   const { scrollYProgress } = useScroll();
   const [visibleParagraphs, setVisibleParagraphs] = useState(0);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
 
@@ -264,11 +265,10 @@ const Home = () => {
                 }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                 className="relative group cursor-pointer"
-                whileHover={{ scale: 1.05, rotateY: 5 }}
               >
                 <img
-                  src={coverImg}
-                  alt="Le Péril book cover"
+                    src={language === 'fr' ? coverImgFR : coverImgEN}
+                    alt={language === 'fr' ? "Couverture du livre Le Péril" : "Le Péril book cover"}
                   className="w-64 h-96 lg:w-72 lg:h-[432px] object-cover rounded-lg shadow-2xl border border-red-900/30 transition-all duration-500"
                 />
                 
@@ -332,8 +332,8 @@ const Home = () => {
                 className="relative group"
               >
                 <img
-                  src={coverImg}
-                  alt="Le Péril book cover"
+                  src={language === 'fr' ? coverImgFR : coverImgEN}
+                  alt={language === 'fr' ? "Couverture du livre Le Péril" : "Le Péril book cover"}
                   className="w-40 h-60 object-cover rounded-lg shadow-xl border border-red-900/30"
                 />
                 
