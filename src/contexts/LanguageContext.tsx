@@ -21,7 +21,7 @@ const translations = {
     // Home page
     'home.title': 'Le Péril',
     'home.firstsubtitle': 'Those who burn',
-    'home.subtitle': 'Volume 1, to be released late 2025 as an eBook',
+    'home.subtitle': 'To be released in 2026',
     'home.quote': 'How far can we go in the name of the',
     'home.greaterGood': 'greater good',
     'home.enterWorld': 'Immerse yourself',
@@ -96,7 +96,7 @@ const translations = {
     
     // Excerpt page
     'excerpt.title': 'Chapter One',
-    'excerpt.subtitle': 'The Ceremony',
+    'excerpt.subtitle': 'The Offering of the Living',
     'excerpt.continue': 'When choices must be made, only ashes will remain.',
     'excerpt.getBook': 'Wishlist Le Péril',
     'excerpt.available': 'Available in digital format',
@@ -116,7 +116,7 @@ const translations = {
     // Home page
     'home.title': 'Le Péril',
     'home.firstsubtitle': 'Ceux qui se consument ',
-    'home.subtitle': 'Tome 1, à paraître fin 2025 en eBook',
+    'home.subtitle': 'À paraître en 2026',
     'home.quote': 'Jusqu\'où peut-on aller au nom du',
     'home.greaterGood': 'bien commun ',
     'home.enterWorld': 'Plongez dans l\'univers',
@@ -134,7 +134,7 @@ const translations = {
     
     // Synopsis paragraphs
     'synopsis.p1': 'Grâce au Programme, les habitants des Territoires de Nol peuvent offrir un temps déterminé de leur vie pour renforcer l\’Éthéranium, la barrière protectrice qui les préserve du Souffle.',
-    'synopsis.p2': 'Mais lors d\’une collecte, une femme meurt. Cet incident sans précédent va déclencher une crise profonde et violente entre les défenseurs du Programme et ceux chez qui le doute s\’est immiscé.',
+    'synopsis.p2': 'Mais lors d\’une collecte, une femme meurt. Cet incident sans précédent va déclencher une fracture profonde et violente entre les défenseurs du Programme et ceux chez qui le doute s\’est immiscé.',
     'synopsis.p3': 'Joseph, fondateur du Programme, doit le maintenir coûte que coûte. Aylin, sa nièce et jeune Aspirante, découvre les premières failles dans ce qu\’elle croyait immuable et Cal, un dissident résolu, voit là l\’étincelle qu\’il attendait.',
     
     // Quiz page
@@ -193,7 +193,7 @@ const translations = {
     
     // Excerpt page
     'excerpt.title': 'Chapitre Un',
-    'excerpt.subtitle': 'La Cérémonie',
+    'excerpt.subtitle': 'L’Offrande des Vivants',
     'excerpt.continue': 'À l’heure des choix, il ne restera que des cendres.',
     'excerpt.getBook': 'Prévenez-moi à la sortie',
     'excerpt.available': 'Disponible en format numérique',
