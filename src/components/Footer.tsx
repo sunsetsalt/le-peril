@@ -51,7 +51,7 @@ const Footer = () => {
               </a>
               
               <a
-                href="https://www.tiktok.com/@manon.cqd"
+                href="https://www.tiktok.com/@manon_coquard"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group text-gray-400 hover:text-red-400 transition-all duration-300"
