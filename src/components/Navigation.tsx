@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Square, Menu, X, Globe } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-  const [isPageChanging, setIsPageChanging] = useState(false);
   const { language, setLanguage, t } = useLanguage();
 
   const navItems = [
@@ -16,24 +15,22 @@ const Navigation = () => {
     { path: '/excerpt', label: t('nav.excerpt') },
   ];
 
-  const handleNavClick = () => {
-    setIsPageChanging(true);
-    setTimeout(() => setIsPageChanging(false), 100);
-  };
   return (
-    <motion.nav 
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-lg border-b border-red-900/30 shadow-lg shadow-red-900/10"
-    >
-      <div className="max-w-7xl mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
+    <>
+      <motion.nav
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        className="fixed top-0 left-0 right-0 z-50 bg-black/75 backdrop-blur-md border-b border-white/5"
+      >
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 h-14 md:h-16 flex items-center justify-between">
+
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group transition-all duration-300 hover:scale-105">
+          <Link to="/" className="flex items-center space-x-3 group transition-all duration-300 hover:scale-105" onClick={() => setIsMenuOpen(false)}>
             <div className="relative">
-              <motion.div 
-                className="w-5 h-5 border-2 border-red-800 transform rotate-45 relative group-hover:border-red-700 transition-colors duration-300">
+              <motion.div
+                className="w-5 h-5 border-2 border-red-800 transform rotate-45 relative group-hover:border-red-700 transition-colors duration-300"
+              >
                 <div className="absolute inset-[1px] border-2 border-gray-600 group-hover:border-gray-500 transition-colors duration-300"></div>
               </motion.div>
               <motion.div
@@ -47,164 +44,126 @@ const Navigation = () => {
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
+          {/* Desktop center nav */}
+          <div className="hidden md:flex items-center gap-7 absolute left-1/2 -translate-x-1/2">
             {navItems.map((item) => (
-              <div
+              <Link
                 key={item.path}
-                className="relative"
+                to={item.path}
+                className={`relative text-sm tracking-wide transition-colors duration-200 py-1 ${
+                  location.pathname === item.path
+                    ? 'text-red-400'
+                    : 'text-gray-300 hover:text-white'
+                }`}
               >
-                <Link
-                  to={item.path}
-                  onClick={handleNavClick}
-                  className={`text-sm font-medium tracking-wide transition-all duration-300 hover:text-red-400 relative z-10 ${
-                    location.pathname === item.path 
-                      ? 'text-red-500' 
-                      : 'text-gray-300'
-                  }`}
-                >
-                  {item.label}
-                </Link>
-                {/* Active indicator */}
+                {item.label}
                 {location.pathname === item.path && (
                   <motion.div
-                    layoutId={isPageChanging ? undefined : "activeTab"}
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-red-500 rounded-full"
-                    initial={false}
-                    transition={{ 
-                      type: "spring", 
-                      stiffness: 500, 
-                      damping: 30,
-                      delay: isPageChanging ? 0.1 : 0
-                    }}
+                    layoutId="nav-underline"
+                    className="absolute -bottom-px left-0 right-0 h-px bg-red-600/70"
+                    transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 )}
-                {/* Hover background */}
-                <motion.div
-                  className="absolute inset-0 bg-red-600/10 rounded-lg -z-10"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileHover={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.2 }}
-                />
-              </div>
+              </Link>
             ))}
           </div>
 
-          {/* Right Section - Language Toggle + CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
-            {/* Language Toggle */}
-            <div className="flex items-center space-x-1">
-              <Globe className="w-4 h-4 text-gray-400" />
-              <button
-                onClick={() => setLanguage(language === 'en' ? 'fr' : 'en')}
-                className="text-sm font-medium text-gray-300 hover:text-red-400 transition-colors duration-300 px-2 py-1 rounded hover:bg-red-600/10"
-              >
-                {language === 'en' ? 'EN' : 'FR'}
-              </button>
-            </div>
-            
-            {/* CTA Button */}
+          {/* Desktop right side */}
+          <div className="hidden md:flex items-center gap-5">
+            <button
+              onClick={() => setLanguage(language === 'en' ? 'fr' : 'en')}
+              className="flex items-center gap-1.5 text-xs tracking-[0.18em] uppercase text-stone-400 hover:text-stone-200 transition-colors duration-200"
+            >
+              <Globe className="w-3.5 h-3.5" />
+              {language === 'en' ? 'FR' : 'EN'}
+            </button>
+
             <motion.a
               href="https://forms.gle/3eMrUnTXJM1xEMJN7"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-red-800 to-red-900 hover:from-red-700 hover:to-red-800 text-white px-6 py-2 rounded-lg font-medium text-sm transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-red-500/30 relative overflow-hidden group"
+              className="bg-gradient-to-r from-red-800 to-red-900 hover:from-red-700 hover:to-red-800 text-white px-6 py-2 rounded-lg font-medium text-sm transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="relative z-10">{t('nav.getBook')}</span>
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-red-500 to-red-600"
-                initial={{ x: "-100%" }}
-                whileHover={{ x: "0%" }}
-                transition={{ duration: 0.3 }}
-              />
+              {t('nav.getBook')}
             </motion.a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <motion.button
+          {/* Mobile menu button */}
+          <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white p-2 hover:text-red-400 transition-colors duration-300 hover:bg-red-600/10 rounded-lg"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
+            className="md:hidden text-stone-400 hover:text-stone-200 p-1 transition-colors"
+            aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </motion.button>
+            {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
         </div>
+      </motion.nav>
 
-        {/* Mobile Menu */}
-        <motion.div
-          className="md:hidden overflow-hidden border-t border-red-900/20"
-          initial={{ height: 0, opacity: 0 }}
-          animate={{ 
-            height: isMenuOpen ? "auto" : 0,
-            opacity: isMenuOpen ? 1 : 0
-          }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
-        >
-          <div className="py-4">
-            <div className="flex flex-col space-y-4">
-              {/* Mobile Language Toggle */}
-              <motion.div
-                initial={{ x: -20, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.3 }}
-                className="flex items-center justify-between px-4 py-2"
-              >
-                <div className="flex items-center space-x-2">
-                  <Globe className="w-4 h-4 text-gray-400" />
-                  <span className="text-sm text-gray-400">Language</span>
-                </div>
-                <button
-                  onClick={() => setLanguage(language === 'en' ? 'fr' : 'en')}
-                  className="text-sm font-medium text-gray-300 hover:text-red-400 transition-colors duration-300 px-3 py-1 rounded hover:bg-red-600/10"
-                >
-                  {language === 'en' ? 'English' : 'Français'}
-                </button>
-              </motion.div>
-              
-              {navItems.map((item) => (
+      {/* Mobile dropdown menu — top only, not full screen */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2 }}
+            className="fixed top-14 left-0 right-0 z-40 bg-black/95 backdrop-blur-lg border-b border-red-900/30 shadow-2xl shadow-black/60 md:hidden"
+          >
+            <div className="px-6 py-4 space-y-1">
+              {/* Nav links */}
+              {navItems.map((item, i) => (
                 <motion.div
                   key={item.path}
-                  initial={{ x: -20, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.3, delay: navItems.indexOf(item) * 0.1 }}
+                  initial={{ opacity: 0, x: -12 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.2, delay: i * 0.05 }}
                 >
                   <Link
                     to={item.path}
-                    onClick={() => {
-                      setIsMenuOpen(false);
-                      handleNavClick();
-                    }}
-                    className={`block text-sm font-medium tracking-wide transition-colors hover:text-red-400 py-2 px-4 rounded-lg hover:bg-red-600/10 ${
-                      location.pathname === item.path 
-                        ? 'text-red-500 bg-red-600/10' 
-                        : 'text-gray-300'
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`block py-3 text-xl font-serif transition-colors duration-200 border-b border-white/5 ${
+                      location.pathname === item.path
+                        ? 'text-red-400'
+                        : 'text-gray-200 hover:text-white'
                     }`}
                   >
                     {item.label}
                   </Link>
                 </motion.div>
               ))}
-              <motion.a
-                href="https://forms.gle/3eMrUnTXJM1xEMJN7"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-2 rounded-lg font-medium text-sm text-center mt-4 hover:from-red-700 hover:to-red-800 transition-all duration-300"
-                initial={{ x: -20, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.3, delay: 0.5 }}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+
+              {/* Language toggle + CTA */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.2, delay: 0.2 }}
+                className="pt-3 pb-2 flex items-center justify-between gap-4"
               >
-                {t('nav.getBook')}
-              </motion.a>
+                <button
+                  onClick={() => setLanguage(language === 'en' ? 'fr' : 'en')}
+                  className="flex items-center gap-2 text-sm text-stone-400 hover:text-stone-200 transition-colors"
+                >
+                  <Globe className="w-4 h-4" />
+                  {language === 'en' ? 'FR' : 'EN'}
+                </button>
+
+                <a
+                  href="https://forms.gle/3eMrUnTXJM1xEMJN7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="bg-gradient-to-r from-red-700 to-red-800 hover:from-red-600 hover:to-red-700 text-white px-6 py-2.5 rounded-lg font-semibold text-base transition-all duration-300 whitespace-nowrap"
+                >
+                  {t('nav.getBook')}
+                </a>
+              </motion.div>
             </div>
-          </div>
-        </motion.div>
-      </div>
-    </motion.nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 };
 

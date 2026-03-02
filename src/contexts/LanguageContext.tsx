@@ -27,7 +27,19 @@ const translations = {
     'home.enterWorld': 'Immerse yourself',
     'home.synopsis': 'Synopsis',
     'home.discoverAllegiance': 'Which faction do you belong to?',
-    
+    'home.factions.sectionTitle': 'Choose Your Side',
+    'home.factions.loyal.name': 'The Loyal',
+    'home.factions.loyal.tag': 'Order · Program · Sacrifice',
+    'home.factions.loyal.desc': 'They believe the protection of all justifies every sacrifice. Order is not a constraint — it is survival.',
+    'home.factions.dissident.name': 'The Peril',
+    'home.factions.dissident.tag': 'Truth · Justice · Resistance',
+    'home.factions.dissident.desc': 'They refuse to let doubt be silenced. No system built on hidden suffering deserves to endure.',
+    'home.factions.cta': 'Discover your allegiance',
+    'quiz.officialHeader': 'Programme of the Territories of Nol',
+    'quiz.evalTitle': 'Allegiance Assessment',
+    'quiz.loyalTitle': 'Assessment Complete',
+    'quiz.dissidentTitle': 'Identity Revealed',
+
     // Tropes
     'tropes.dystopian': 'Dystopian Fiction',
     'tropes.foundFamily': 'Found Family',
@@ -122,7 +134,19 @@ const translations = {
     'home.enterWorld': 'Plongez dans l\'univers',
     'home.synopsis': 'Synopsis',
     'home.discoverAllegiance': 'À quelle faction appartenez-vous ?',
-    
+    'home.factions.sectionTitle': 'Choisissez votre camp',
+    'home.factions.loyal.name': 'Les Loyaux',
+    'home.factions.loyal.tag': 'Ordre · Programme · Sacrifice',
+    'home.factions.loyal.desc': 'Ils croient que la protection de tous justifie chaque sacrifice. L\'ordre n\'est pas une contrainte — c\'est la survie.',
+    'home.factions.dissident.name': 'Le Péril',
+    'home.factions.dissident.tag': 'Vérité · Justice · Résistance',
+    'home.factions.dissident.desc': 'Ils refusent que le doute soit tu. Aucun système bâti sur la souffrance cachée ne mérite de durer.',
+    'home.factions.cta': 'Découvrez votre allégeance',
+    'quiz.officialHeader': 'Programme des Territoires de Nol',
+    'quiz.evalTitle': 'Évaluation d\'allégeance',
+    'quiz.loyalTitle': 'Évaluation complète',
+    'quiz.dissidentTitle': 'Identité révélée',
+
     // Tropes
     'tropes.dystopian': 'Dystopie',
     'tropes.foundFamily': 'Found family',
