@@ -1,89 +1,104 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Excerpt = () => {
   const { t } = useLanguage();
-  
+
   return (
-    <div className="min-h-screen pt-20">
-      <div className="max-w-4xl mx-auto px-6 py-20">
+    <div className="min-h-screen pt-14 md:pt-16">
+      <div className="max-w-2xl mx-auto px-5 sm:px-8 py-16 md:py-24">
+
+        {/* Chapter header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+          <div className="flex items-center justify-center gap-3 mb-5">
+            <span className="h-px flex-1 max-w-[80px] bg-gradient-to-r from-transparent to-red-900/25" />
+            <span className="text-red-700/40 text-sm">◆</span>
+            <span className="h-px flex-1 max-w-[80px] bg-gradient-to-l from-transparent to-red-900/25" />
+          </div>
+
+          <p className="text-[10px] tracking-[0.35em] uppercase text-stone-500 mb-4">
             {t('excerpt.title')}
-          </h1>
-          <p className="text-xl text-red-400 font-light italic">
-            {t('excerpt.subtitle')}
           </p>
+
+          <h1 className="font-serif font-bold text-3xl md:text-4xl lg:text-5xl text-white leading-tight">
+            {t('excerpt.subtitle')}
+          </h1>
+
+          <div className="flex items-center justify-center gap-3 mt-5">
+            <span className="h-px flex-1 max-w-[80px] bg-gradient-to-r from-transparent to-red-900/25" />
+            <span className="text-red-700/40 text-sm">◆</span>
+            <span className="h-px flex-1 max-w-[80px] bg-gradient-to-l from-transparent to-red-900/25" />
+          </div>
         </motion.div>
 
+        {/* Book text */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="prose prose-lg prose-invert max-w-none"
         >
-          <div className="bg-black/30 backdrop-blur-sm rounded-lg p-8 md:p-12 border border-red-900/20">
-            <div className="font-serif text-gray-200 leading-relaxed space-y-6 text-justify">
-              <p className="text-xl md:text-xl first-letter:text-7xl first-letter:font-bold first-letter:text-red-500 first-letter:float-left first-letter:mr-3 first-letter:mt-1">
+          <div
+            className="rounded-lg border border-white/5 bg-black/25 backdrop-blur-sm px-7 py-8 md:px-10 md:py-10"
+            style={{ boxShadow: 'inset 0 0 60px rgba(0,0,0,0.3)' }}
+          >
+            <div className="font-serif text-gray-200 leading-[1.9] text-justify space-y-5 text-lg md:text-xl">
+
+              {/* Drop cap paragraph */}
+              <p className="first-letter:text-[4.5rem] first-letter:leading-[0.8] first-letter:font-bold first-letter:text-red-500 first-letter:float-left first-letter:mr-2 first-letter:mt-1">
                 {t('excerpt.content.p1')}
               </p>
-              
-              <p className="text-xl md:text-lg lg:text-xl">
-                {t('excerpt.content.p2')}
-              </p>
-              
-              <p className="text-xl md:text-lg lg:text-xl">
-                {t('excerpt.content.p3')}
-              </p>
-              
-              <p className="text-xl md:text-lg lg:text-xl">
-                {t('excerpt.content.p4')}
-              </p>
-              <p className="text-xl md:text-lg lg:text-xl italic text-red-400">
+
+              <p>{t('excerpt.content.p2')}</p>
+
+              <p>{t('excerpt.content.p3')}</p>
+
+              <p>{t('excerpt.content.p4')}</p>
+
+              {/* Closing line — styled differently */}
+              <p className="pt-2 text-stone-400 italic">
                 {t('excerpt.content.p5')}
               </p>
             </div>
           </div>
         </motion.div>
 
+        {/* Continue prompt */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center mt-16"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.9 }}
+          className="my-12 md:my-16 text-center"
         >
-          <div className="mb-8">
-            <p className="text-gray-400 mb-6 text-lg">
-              {t('excerpt.continue')}
-            </p>
-          </div>
-          
-          <a
+          <p className="font-serif text-xl md:text-2xl text-red-400/70 italic leading-relaxed">
+            {t('excerpt.continue')}
+          </p>
+        </motion.div>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1 }}
+          className="text-center"
+        >
+          <motion.a
             href="https://forms.gle/3eMrUnTXJM1xEMJN7"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-gradient-to-r from-red-700 to-red-800 hover:from-red-600 hover:to-red-700 text-white px-12 py-4 rounded-lg font-semibold text-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-500/50 relative overflow-hidden group"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-block bg-gradient-to-r from-red-700 to-red-800 hover:from-red-600 hover:to-red-700 text-white px-12 py-4 rounded-lg font-semibold text-xl transition-all duration-300"
           >
-            <span className="relative z-10">{t('excerpt.getBook')}</span>
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-red-500 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              initial={{ x: "-100%" }}
-              whileHover={{ x: "0%" }}
-              transition={{ duration: 0.3 }}
-            />
-          </a>
-          
-          <div className="mt-8">
-            <p className="text-sm text-gray-500">
-              {t('excerpt.available')}
-            </p>
-          </div>
+            {t('excerpt.getBook')}
+          </motion.a>
+          <p className="text-xs text-stone-400 mt-4 tracking-wide">
+            {t('excerpt.available')}
+          </p>
         </motion.div>
       </div>
     </div>
